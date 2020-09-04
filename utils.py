@@ -29,5 +29,5 @@ def pretty_print(sentence, val):
 
 # Read word list from the given file path
 def load_wordlist(path):
-    with open(path) as f:
+    with open(path, encoding="UTF-8") as f:
         return f.read().strip().split("\n")
